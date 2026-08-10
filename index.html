@@ -1,1 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waliyat Opeyemi | Data Analyst</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f7f9fc;
+            color: #1f2937;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #93c5fd;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 13px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 22px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 3px;
+        }
+
+        .experience {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .experience-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #030712;
+            color: #9ca3af;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Waliyat Opeyemi</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Waliyat 👋</h1>
+
+            <h3>Data Analyst | Public Health & M&E</h3>
+
+            <p>
+                I transform data into meaningful insights that support
+                better decisions, improve programme performance, and solve
+                real-world problems.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a Biochemistry graduate and Monitoring & Evaluation
+                professional with experience in public health data,
+                reporting, data validation and programme monitoring.
+                I am developing my career in Data Analytics, with hands-on
+                experience using Excel, Power BI, SQL and data visualization.
+                I am passionate about turning data into actionable insights
+                that support evidence-based decisions.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+
+        <div class="skills">
+            <div class="skill">Excel</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Python</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Monitoring & Evaluation</div>
+            <div class="skill">Public Health Data</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>AdventureWorks Sales Dashboard</h3>
+
+                <p>
+                    An interactive Power BI dashboard analysing sales,
+                    products, customers and business performance.
+                </p>
+
+                <span class="tag">Power BI</span>
+                <span class="tag">Excel</span>
+                <span class="tag">Data Visualization</span>
+            </div>
+
+            <div class="project">
+                <h3>Public Health Data Analysis</h3>
+
+                <p>
+                    Analysis of public health programme data to identify
+                    trends, monitor indicators and generate insights for
+                    evidence-based decision-making.
+                </p>
+
+                <span class="tag">Excel</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">M&E</span>
+            </div>
+
+            <div class="project">
+                <h3>SQL Data Analysis</h3>
+
+                <p>
+                    A SQL project focused on querying, cleaning and analysing
+                    structured datasets to answer business questions.
+                </p>
+
+                <span class="tag">SQL</span>
+                <span class="tag">Data Analysis</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="experience">
+
+            <div class="experience-item">
+                <h3>Monitoring & Evaluation Professional</h3>
+
+                <p>
+                    Experience supporting public health programmes through
+                    data collection, validation, documentation, reporting,
+                    indicator tracking and performance monitoring.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Public Health & Research Experience</h3>
+
+                <p>
+                    Background in laboratory research and public health,
+                    providing a strong foundation in scientific data,
+                    analytical thinking and evidence-based problem solving.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+
+        <p>
+            I'm open to Data Analytics opportunities, collaborations,
+            internships and projects.
+        </p>
+
+        <a href="https://github.com/Whaleeyat" class="button">
+            GitHub
+        </a>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Waliyat Opeyemi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
